@@ -1,6 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Muli);
+@import url(http://fonts.googleapis.com/css?family=Kreon);
+$font-family-base:  Muli, Helvetica;
+
 @import "bootstrap-sprockets";
-@import "bootstrap/variables";
+/*@import "bootstrap/variables";*/
 @import "bootstrap";
+
+
 
 .header {
 	margin-top: 10px;
