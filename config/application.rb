@@ -19,5 +19,9 @@ module OneMonthRails
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+
+    #uncomment this line in case of error on heroku due to devise.
+    #config.asset.initialize_on_compile = false
   end
 end
