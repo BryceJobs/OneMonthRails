@@ -1,10 +1,15 @@
 <br>
 <div class="col-md-offset-3	col-md-6 well">
 	<p>
-	  <strong>Description:</strong>
-	  <%= @pin.description %>
+	  <p>
+	  	<strong>Description:</strong>
+	  	<%= @pin.description %>
+	  </p>
+	  <small>Posted by: <%= link_to @pin.user.name, '#' %></small>
 	</p>
 	<hr>
-	<%= link_to 'Edit', edit_pin_path(@pin) %> |
+	<% if current_user == @pin.user %>
+		<%= link_to 'Edit', edit_pin_path(@pin) %> |
+	<% end -%>
 	<%= link_to 'Back', pins_path %>
 </div>
