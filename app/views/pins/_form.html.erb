@@ -1,8 +1,11 @@
 
 	<%= simple_form_for(@pin) do |f| %>
 	  <%= f.error_notification %>
+	  <%= f.full_error :image_file_size, class: 'alert alert-danger' %>
+	  <%= f.full_error :image_content_type, class: 'alert alert-danger' %>
 
 	  <div class="form-inputs">
+	    <%= f.input :image %>
 	    <%= f.input :description %>
 	  </div>
 

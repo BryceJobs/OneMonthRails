@@ -28,11 +28,14 @@ GEM
     arel (4.0.2)
     autoprefixer-rails (4.0.0.1)
       execjs
-    bcrypt (3.1.9)
     bcrypt (3.1.9-x86-mingw32)
     bootstrap-sass (3.3.1.0)
       sass (~> 3.2)
     builder (3.1.4)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.4)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -64,6 +67,11 @@ GEM
     minitest (4.7.5)
     multi_json (1.10.1)
     orm_adapter (0.5.0)
+    paperclip (4.2.0)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.3)
+      mime-types
     pg (0.17.1-x86-mingw32)
     polyglot (0.3.5)
     rack (1.5.2)
@@ -132,6 +140,7 @@ DEPENDENCIES
   devise
   jbuilder (~> 1.2)
   jquery-rails
+  paperclip (~> 4.2)
   pg
   rails (= 4.0.4)
   sass-rails (>= 3.2)
