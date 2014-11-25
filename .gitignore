@@ -14,3 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+#ignore public/system folder
+# those are paperclip uploaded file
+/public/system
