@@ -10,6 +10,26 @@ $font-family-base: Kreon, Muli, Helvetica;
 
 .header {
 	margin-top: 10px;
+
+}
+
+.home .jumbotron{
+	background-image: url(asset-path('share_idea.jpg'));
+	min-height: 400px;
+	background-position: center;
+}
+
+.home h1{
+	color: white;
+} 
+
+.home h3{
+	margin-left:  10px;
+	color: magenta;
+}
+
+.home h1 em{
+	color: green;
 }
 
 .footer{
