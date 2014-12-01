@@ -1,11 +1,17 @@
 OneMonthRails::Application.routes.draw do
   
 
-  resources :pins
+  resources :pins do
+    collection do
+      get 'me'
+    end
+  end
+
 
   devise_for :users
   
   get 'about' => "pages#about"
+
   root "pins#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

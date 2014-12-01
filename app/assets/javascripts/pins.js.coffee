@@ -2,8 +2,10 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-jQuery ->
-	$('#pins').imagesLoaded ->
-		$('#pins').masonry
-			itemSelector: '.box'
-			isAnimated: true
+$(document).ready ->
+  $container = $("#pins")
+  $container.imagesLoaded ->
+    $container.masonry
+      itemSelector: ".box"
+      columnWidth: 95
+

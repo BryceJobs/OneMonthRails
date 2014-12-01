@@ -7,7 +7,7 @@
 
 	  		<% if user_signed_in? %>
 	  		  <li>
-	  		  	<%= link_to "Welcome #{current_user.name}", '#' %>
+	  		  	<%= link_to "Welcome #{current_user.name}", me_pins_path %>
 	  		  </li>
 	  		  <li>
 		  		  <%= link_to '+ Add Pin', new_pin_path %>
