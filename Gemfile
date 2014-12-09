@@ -6,6 +6,7 @@ gem 'rails', '4.0.4'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 	gem 'sqlite3'
+	gem 'autoprefixer-rails'
 end
 
 group :production do
@@ -20,7 +21,6 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 gem 'sass-rails', '>= 3.2'
-gem 'autoprefixer-rails'
 
 gem 'devise'
 gem 'simple_form', '3.1.0.rc2'
