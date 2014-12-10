@@ -1,6 +1,10 @@
 class Pin < ActiveRecord::Base
 	belongs_to :user
-	has_attached_file :image, styles: {medium: '220x240>', normal: '530x600>'}
+	has_attached_file :image, 
+		storage: :dropbox,
+		dropbox_credentials: Rails.root.join('config/dropbox.yml'),
+		styles: {medium: '220x240>', normal: '530x600>'},
+		path: ":class/:attachment/:id_partition/:style/:filename"
 
 
 	validates :description, presence: true

@@ -25,6 +25,7 @@ gem 'sass-rails', '>= 3.2'
 gem 'devise'
 gem 'simple_form', '3.1.0.rc2'
 gem "paperclip", "~> 4.2"
+gem 'paperclip-dropbox', '>=1.1.7'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
