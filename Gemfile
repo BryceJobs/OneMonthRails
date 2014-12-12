@@ -7,6 +7,7 @@ gem 'rails', '4.0.4'
 group :development, :test do
 	gem 'sqlite3'
 	gem 'autoprefixer-rails'
+	gem 'faker'
 end
 
 group :production do
@@ -27,6 +28,8 @@ gem 'simple_form', '3.1.0.rc2'
 gem "paperclip", "~> 4.2"
 gem 'paperclip-dropbox', '>=1.1.7'
 
+gem 'kaminari'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -35,6 +38,7 @@ gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+gem 'jquery-turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
