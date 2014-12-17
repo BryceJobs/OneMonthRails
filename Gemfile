@@ -28,6 +28,7 @@ gem 'simple_form', '3.1.0.rc2'
 gem "paperclip", "~> 4.2"
 gem 'paperclip-dropbox', '>=1.1.7'
 gem 'kaminari'
+gem 'rails_12factor'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
