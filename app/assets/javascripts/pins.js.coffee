@@ -2,20 +2,29 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-jQuery ->
-	if $('nav.pagination').length > 0
-		$(window).scroll ->
-			url = $('nav.pagination span.next a').attr('href');
-			if url && $(window).scrollTop() > $(document).height() - $(window).height() - 50 
-				$('nav.pagination').text('Fetching more pins...')
-				$.getScript(url)
-		$(window).scroll()
+$(document).ready ->
+  $("#pins").infinitescroll
+    navSelector: "nav.pagination" 
+    nextSelector: "nav.pagination a[rel=next]" 
+    itemSelector: ".box"
+    animate: true
+    loading:
+   		finishedMsg: "No more pages to load."
+    	img: "http://i.imgur.com/6RMhx.gif"
+    	msgText: "Loading more pins..."
 
-layout = ->
+		,(newElements) ->
+	  	$newElems = $(newElements).css(opacity: 0)
+	  	$newElems.imagesLoaded ->
+	    		$newElems.animate opacity: 1
+			    $("#pins").masonry "appended", $newElems, true
+	    		
+
+
+				
+
+jQuery ->
   $container = $("#pins")
   $container.imagesLoaded ->
     $container.masonry
       itemSelector: ".box"
-      columnWidth: 95
-
- 

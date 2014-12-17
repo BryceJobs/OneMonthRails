@@ -17,5 +17,6 @@
 //= require turbolinks
 //= require jquery.waitforimages.min.js
 //= require imagesloaded.min.js
+//= require infinitescroll.min.js
 //= require masonry.min.js
 //= require_tree .
